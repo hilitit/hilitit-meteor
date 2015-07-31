@@ -1,0 +1,16 @@
+<template name="pageItem">
+  <div class="page">
+    <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
+    ddd
+    <div class="page-content">
+      <h3><a href="{{url}}">{{url}}</a><span>{{domain}}</span></h3>
+      <p>
+      <!--{{pluralize votes "Vote"}}, -->
+      submitted by {{author}},
+      <!--<a href="{{pathFor 'pagePage'}}">{{pluralize commentsCount "comment"}}</a>-->
+      {{#if ownPost}}<a href="{{pathFor 'pageEdit'}}">Edit</a>{{/if}}
+      </p>
+    </div>
+    <a href="{{pathFor 'pagePage'}}" class="discuss btn btn-default">Discuss</a>
+  </div>
+</template>

@@ -1,3 +1,7 @@
 standard-app-packages
 iron:router
 twbs:bootstrap
+sanjo:jasmine
+accounts-password
+ian:accounts-ui-bootstrap-3
+sacha:spin
