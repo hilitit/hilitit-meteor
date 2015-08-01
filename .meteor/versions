@@ -1,5 +1,7 @@
 accounts-base@1.2.0
+accounts-oauth@1.1.5
 accounts-password@1.1.1
+accounts-twitter@1.0.4
 anti:i18n@0.4.3
 autoupdate@1.2.1
 base64@1.0.3
@@ -42,6 +44,8 @@ minimongo@1.0.8
 mobile-status-bar@1.0.3
 mongo@1.1.0
 npm-bcrypt@0.7.8_2
+oauth@1.1.4
+oauth1@1.1.4
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 package-version-parser@3.0.3
@@ -70,6 +74,7 @@ stylus@1.0.7
 templating@1.1.1
 tracker@1.0.7
 twbs:bootstrap@3.3.5
+twitter@1.1.4
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
