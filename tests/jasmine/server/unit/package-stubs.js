@@ -7089,10 +7089,20 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "be2023d865851b74d9942c50819af54f6ce64d72"
+                  "value": "072a141321d0d125723f53c52fe16c88d6a0abb1"
                 },
                 "PUBLIC_SETTINGS": {
-                  "type": "undefined"
+                  "type": "object",
+                  "members": {
+                    "awsBucketUrl": {
+                      "type": "constant",
+                      "value": "https://my-meteor-example.s3.amazonaws.com"
+                    },
+                    "environment": {
+                      "type": "constant",
+                      "value": "staging"
+                    }
+                  }
                 }
               }
             }
@@ -7109,46 +7119,46 @@ var packageMetadata = {
           "members": {
             "use": {
               "type": "function",
-              "refID": 9
+              "refID": 10
             },
             "handle": {
               "type": "function",
-              "refID": 11
+              "refID": 12
             },
             "listen": {
               "type": "function",
-              "refID": 13
+              "refID": 14
             },
             "setMaxListeners": {
               "type": "function",
-              "refID": 15
+              "refID": 16
             },
             "emit": {
               "type": "function",
-              "refID": 17
+              "refID": 18
             },
             "addListener": {
               "type": "function",
-              "refID": 19
+              "refID": 20
             },
             "on": {
-              "ref": 19
+              "ref": 20
             },
             "once": {
               "type": "function",
-              "refID": 21
+              "refID": 22
             },
             "removeListener": {
               "type": "function",
-              "refID": 23
+              "refID": 24
             },
             "removeAllListeners": {
               "type": "function",
-              "refID": 25
+              "refID": 26
             },
             "listeners": {
               "type": "function",
-              "refID": 27
+              "refID": 28
             },
             "route": {
               "type": "constant",
@@ -7163,37 +7173,37 @@ var packageMetadata = {
           "type": "function",
           "members": {
             "use": {
-              "ref": 9
+              "ref": 10
             },
             "handle": {
-              "ref": 11
+              "ref": 12
             },
             "listen": {
-              "ref": 13
+              "ref": 14
             },
             "setMaxListeners": {
-              "ref": 15
+              "ref": 16
             },
             "emit": {
-              "ref": 17
+              "ref": 18
             },
             "addListener": {
-              "ref": 19
+              "ref": 20
             },
             "on": {
-              "ref": 19
+              "ref": 20
             },
             "once": {
-              "ref": 21
+              "ref": 22
             },
             "removeListener": {
-              "ref": 23
+              "ref": 24
             },
             "removeAllListeners": {
-              "ref": 25
+              "ref": 26
             },
             "listeners": {
-              "ref": 27
+              "ref": 28
             },
             "route": {
               "type": "constant",
@@ -7213,7 +7223,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 1
+              "value": 0
             },
             "timeout": {
               "type": "constant",
@@ -7244,28 +7254,28 @@ var packageMetadata = {
               "type": "function"
             },
             "setMaxListeners": {
-              "ref": 15
+              "ref": 16
             },
             "emit": {
-              "ref": 17
+              "ref": 18
             },
             "addListener": {
-              "ref": 19
+              "ref": 20
             },
             "on": {
-              "ref": 19
+              "ref": 20
             },
             "once": {
-              "ref": 21
+              "ref": 22
             },
             "removeListener": {
-              "ref": 23
+              "ref": 24
             },
             "removeAllListeners": {
-              "ref": 25
+              "ref": 26
             },
             "listeners": {
-              "ref": 27
+              "ref": 28
             }
           }
         },
@@ -8710,6 +8720,25 @@ var packageMetadata = {
           "type": "function"
         }
       }
+    },
+    "ObjectLogger": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "enter": {
+              "type": "function"
+            },
+            "return": {
+              "type": "function"
+            },
+            "bindMethod": {
+              "type": "function"
+            }
+          }
+        }
+      }
     }
   },
   "velocity:chokidar": {
@@ -9046,6 +9075,16 @@ var packageMetadata = {
       }
     }
   },
+  "velocity:source-map-support": {
+    "SourceMapSupport": {
+      "type": "object",
+      "members": {
+        "install": {
+          "type": "function"
+        }
+      }
+    }
+  },
   "sanjo:long-running-child-process": {
     "LongRunningChildProcess": {
       "type": "function",
@@ -9243,11 +9282,11 @@ var packageMetadata = {
         },
         "mirrorMeteorVersion": {
           "type": "constant",
-          "value": "1.1.0.2_3"
+          "value": "1.1.0.3_2"
         },
         "mirrorMeteorRelease": {
           "type": "constant",
-          "value": "velocity:METEOR@1.1.0.2_3"
+          "value": "velocity:METEOR@1.1.0.3_2"
         },
         "mirrorMeteorToolReleaseName": {
           "type": "constant",
@@ -9255,11 +9294,11 @@ var packageMetadata = {
         },
         "mirrorMeteorToolVersion": {
           "type": "constant",
-          "value": "1.1.3_4"
+          "value": "1.1.4_2"
         },
         "mirrorMeteorToolRelease": {
           "type": "constant",
-          "value": "velocity:meteor-tool@1.1.3_4"
+          "value": "velocity:meteor-tool@1.1.4_2"
         }
       }
     },
@@ -9532,6 +9571,9 @@ var packageMetadata = {
         },
         "setConfig": {
           "type": "function"
+        },
+        "getConfigPath": {
+          "type": "function"
         }
       }
     },
@@ -9554,11 +9596,11 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 46839
+                  "value": 4533
                 },
                 "fout": {
                   "type": "constant",
-                  "value": 23
+                  "value": 22
                 },
                 "child": {
                   "type": "object",
@@ -9577,7 +9619,7 @@ var packageMetadata = {
                     },
                     "pid": {
                       "type": "constant",
-                      "value": 46839
+                      "value": 4533
                     },
                     "stdin": {
                       "type": "null",
@@ -9798,7 +9840,7 @@ var packageMetadata = {
             },
             "siteName": {
               "type": "constant",
-              "value": "hilit.it:8888"
+              "value": "localhost:8888"
             },
             "resetPassword": {
               "type": "object",
@@ -10741,6 +10783,70 @@ var packageMetadata = {
     }
   },
   "accounts-twitter": {},
+  "gandev:server-eval": {
+    "ServerEval": {
+      "type": "object",
+      "members": {
+        "version": {
+          "type": "constant",
+          "value": "0.5"
+        },
+        "helpers": {
+          "type": "object",
+          "members": {
+            "create-package": {
+              "type": "function"
+            },
+            "updateMetadata": {
+              "type": "function"
+            },
+            "toggleLogging": {
+              "type": "function"
+            },
+            "git": {
+              "type": "function"
+            },
+            "gitStatus": {
+              "type": "function"
+            },
+            "gitDiff": {
+              "type": "function"
+            },
+            "gitLog": {
+              "type": "function"
+            },
+            "gitReflog": {
+              "type": "function"
+            },
+            "gitBranch": {
+              "type": "function"
+            }
+          }
+        },
+        "results": {
+          "type": "function"
+        },
+        "metadata": {
+          "type": "function"
+        },
+        "watch": {
+          "type": "function"
+        },
+        "removeWatch": {
+          "type": "function"
+        },
+        "eval": {
+          "type": "function"
+        },
+        "execute": {
+          "type": "function"
+        },
+        "clear": {
+          "type": "function"
+        }
+      }
+    }
+  },
   "reload": {},
   "autoupdate": {
     "Autoupdate": {
@@ -10748,11 +10854,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "c38e078f3c7419a96f50b6658a4299924afe9d9a"
+          "value": "a1ac1963d6c373f1d55794fb022a36c7c3155ccf"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "f5aef2e9f6a400007c7c133de5b4eee3a45a1de6"
+          "value": "6c32d81e952e4ba325c4ec86a5c8968bb48695ed"
         },
         "autoupdateVersionCordova": {
           "type": "constant",

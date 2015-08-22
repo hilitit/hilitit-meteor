@@ -1,5 +1,6 @@
 
 Meteor.publish('pages', function(options) {
+  console.log(options);
   check(options, {
     sort: Object,
     limit: Number

@@ -1,4 +1,5 @@
 // Fixture data 
+//console.log (Pages.find() );
 if (Pages.find().count() === 0) {
   var now = new Date().getTime();
   
