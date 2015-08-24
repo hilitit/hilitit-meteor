@@ -7089,7 +7089,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "072a141321d0d125723f53c52fe16c88d6a0abb1"
+                  "value": "ff29c7188539a0a1955437f8465d066606b56d48"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "object",
@@ -7223,7 +7223,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 0
+              "value": 4
             },
             "timeout": {
               "type": "constant",
@@ -9596,7 +9596,7 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 4533
+                  "value": 16700
                 },
                 "fout": {
                   "type": "constant",
@@ -9619,7 +9619,7 @@ var packageMetadata = {
                     },
                     "pid": {
                       "type": "constant",
-                      "value": 4533
+                      "value": 16700
                     },
                     "stdin": {
                       "type": "null",
@@ -10847,6 +10847,38 @@ var packageMetadata = {
       }
     }
   },
+  "grigio:babel": {},
+  "velocity:html-reporter": {},
+  "velocity:console-reporter": {
+    "ConsoleReporter": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "reportSummary": {
+              "type": "function"
+            },
+            "reportPassed": {
+              "type": "function"
+            },
+            "reportFailed": {
+              "type": "function"
+            },
+            "reportOneFailed": {
+              "type": "function"
+            },
+            "totalTime": {
+              "type": "function"
+            },
+            "formatTime": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
   "reload": {},
   "autoupdate": {
     "Autoupdate": {
@@ -10854,11 +10886,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "a1ac1963d6c373f1d55794fb022a36c7c3155ccf"
+          "value": "da03294480c4d72235a3682bcb2301f833e03448"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "6c32d81e952e4ba325c4ec86a5c8968bb48695ed"
+          "value": "5af96be68d5c2457764ca610f30a00de7d47cd71"
         },
         "autoupdateVersionCordova": {
           "type": "constant",

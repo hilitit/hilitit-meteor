@@ -1,8 +1,8 @@
-// Fixture data 
+// Fixture data
 //console.log (Pages.find() );
-if (Pages.find().count() === 0) {
+if (!Pages.find() || Pages.find().count() === 0) {
   var now = new Date().getTime();
-  
+
   // create two users
   var tomId = Meteor.users.insert({
     profile: { name: 'Tom Coleman' }
@@ -13,7 +13,7 @@ if (Pages.find().count() === 0) {
     profile: { name: 'Sacha Greif' }
   });
   var sacha = Meteor.users.findOne(sachaId);
-  
+
   var page1Id = Pages.insert({
     url: 'http://www.aljazeera.com/news/2015/07/turkey-erdogan-warns-kurdish-fighters-150728130110904.html',
     createdAt: new Date(now - 7 * 3600 * 1000)
@@ -81,5 +81,5 @@ if (Pages.find().count() === 0) {
     createdAt: new Date(now - 5 * 3600 * 1000),
     text: 'I have to be honest with you: I just don\'t understand this'
   });
-  
+
 }

@@ -7,3 +7,5 @@ ian:accounts-ui-bootstrap-3
 sacha:spin
 accounts-twitter
 gandev:server-eval
+velocity:html-reporter
+velocity:console-reporter
