@@ -1,0 +1,36 @@
+// Fixture data
+//console.log (Pages.find() );
+// Highlights
+// Highlight
+
+if (!Highlights.find() || Highlights.find().count() === 0) {
+  var now = new Date().getTime();
+
+  // create two users
+  var tomId = Meteor.users.insert({
+    profile: { name: 'Tom Coleman' }
+  });
+  var tom = Meteor.users.findOne(tomId);
+
+  var sachaId = Meteor.users.insert({
+    profile: { name: 'Sacha Greif' }
+  });
+  var sacha = Meteor.users.findOne(sachaId);
+
+  var highlight1Id = Highlights.insert({
+    userId: tomId,
+    selector: " BODY. div ",
+    text: 'impossible to continue a peace process with Kurdish fighters',
+    host: "www.aljazeera.com",
+    port: String,
+    path: "/news/2015/07/turkey-erdogan-warns-kurdish-fighters-150728130110904.html",
+    protocol: "http:",
+    startOffset: 10,
+    endOffset: 200,
+    createdAt: new Date(now - 7 * 3600 * 1000)
+  });
+
+
+
+
+}

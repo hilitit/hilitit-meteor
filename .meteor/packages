@@ -9,3 +9,9 @@ accounts-twitter
 gandev:server-eval
 velocity:html-reporter
 velocity:console-reporter
+xolvio:cucumber
+practicalmeteor:sinon
+meteorhacks:npm
+
+
+npm-container

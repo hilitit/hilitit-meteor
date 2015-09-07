@@ -5,12 +5,12 @@ Meteor.publish('pages', function(options) {
     sort: Object,
     limit: Number
   });
-  return Pages.find({}, options);
+  return Highlights.find({}, options);
 });
 
 Meteor.publish('singlePage', function(id) {
   check(id, String);
-  return Page.find(id);
+  return Highlights.find(id);
 });
 
 /*
